@@ -218,13 +218,13 @@
     }
 
     header#home .content .text h1 {
-        font-size: 4.5rem;
+        font-size: 3rem;
         width: 70%;
         margin-bottom: 2rem;
     }
 
     header#home .content .text p {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 4rem;
         color: #ffffffab;
     }
@@ -238,7 +238,7 @@
     header#home .wrapper .content .image img.principal {
         width: 35%;
         top: initial;
-        bottom: -25rem;
+        bottom: -30rem;
 
         animation: moveMockup infinite ease-in-out 5s;
     }
@@ -319,6 +319,18 @@
 }
 
 @media (min-width: 1700px) {
+    header#home .content .text h1 {
+        font-size: 4.5rem;
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    header#home .content .text p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        color: #ffffffab;
+    }
+    
     header#home .wrapper .content .image img.principal {
         width: 50%;
         top: initial;
