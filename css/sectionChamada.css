@@ -1,5 +1,5 @@
 #chamada {
-    background: linear-gradient(to bottom, #003e6d, #002c4e);
+    background: var(--gradient2);
     position: relative;
     overflow: hidden;
 }
@@ -19,36 +19,61 @@
     margin-bottom: 3rem;
 }
 
+#chamada .content header {
+    border: 2px solid #1DCA1D;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
 #chamada h2 {
     font-size: 3rem;
-    color: var(--color-white);
-    font-weight: 500;
+    color: #fff;
+    font-weight: 400;
 
     margin-bottom: 3rem;
 }
 
 #chamada h2 span {
-    color: var(--primary-color);
     font-weight: 600;
 }
 
+#chamada h3 {
+    font-size: 4rem;
+    color: #fff;
+
+    margin-bottom: 3rem;
+}
+
+#chamada h3 span {
+    background: linear-gradient(40deg, #ebfae0 40%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+#chamada h3 span.dois {
+    font-size: 3rem;
+}
+
 #chamada a button {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--secondary-color);
-    background-color: var(--color-white);
-    padding: 1.5rem 3rem;
-    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 2rem;
     border: none;
+    border-radius: 1rem;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 500;
 
     transition: all 200ms ease-in-out;
 }
 
-#chamada a button:hover {
+#chamada button:hover {
     cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--color-white);
+    filter: brightness(1.2);
 }
+
 
 #chamada img.imagem {
     display: none;
@@ -60,13 +85,29 @@
         margin-bottom: 4rem;
     }
 
+    section#chamada .content header {
+        padding: 5rem;
+    }
+
     section#chamada h2 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin-bottom: 4rem;
     }
 
+    section#chamada h3 {
+        font-size: 8rem;
+    }
+
+    section#chamada h3 span {
+        font-size: 4rem;
+    }
+
+    section#chamada h3 span.dois {
+        font-size: 4rem;
+    }
+
     section#chamada a button {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     section#chamada img.imagem {
