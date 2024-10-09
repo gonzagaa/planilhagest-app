@@ -236,9 +236,9 @@
     }
 
     header#home .wrapper .content .image img.principal {
-        width: 40%;
+        width: 35%;
         top: initial;
-        bottom: -35rem;
+        bottom: -25rem;
 
         animation: moveMockup infinite ease-in-out 5s;
     }
@@ -304,7 +304,7 @@
         box-shadow:  12px 12px 23px #000a14,
              -12px -12px 23px #000a14;
 
-        background: linear-gradient(to right, #177b17, #16d316);
+        background: linear-gradient(to right, #177b17, #05ff05);
         animation: gradient 3s ease infinite;
         background-size: 200% 200%;
 
@@ -318,7 +318,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
     header#home .wrapper .content .image img.principal {
         width: 50%;
         top: initial;

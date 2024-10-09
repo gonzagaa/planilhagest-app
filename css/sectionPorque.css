@@ -65,7 +65,9 @@
     font-size: 1.6rem;
     border: none;
     border-radius: 1rem;
-    background: var(--gradient);
+    background: linear-gradient(to right, #177b17, #00ff00);
+        animation: gradient 3s ease infinite;
+        background-size: 200% 200%;
     color: #fff;
     font-weight: 500;
 
@@ -75,8 +77,7 @@
 #porque a button:hover {
     cursor: pointer;
     filter: brightness(1.1);
-    box-shadow:  13px 13px 27px #00240c,
-                -13px -13px 27px #001900;
+    box-shadow: 0 0 30px #16d3165b;
 }
 
 @media (min-width: 1080px) {

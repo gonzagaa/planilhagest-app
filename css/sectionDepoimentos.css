@@ -31,6 +31,14 @@
     width: 100%;
 }
 
+#depoimentos .cards .card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
 @media (min-width: 1080px) {
     section#depoimentos .content {
         display: flex;
