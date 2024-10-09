@@ -25,6 +25,18 @@
     border-radius: 2rem;
 }
 
+#chamada h4 {
+    color: #ffffffc4;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+#chamada h4 span {
+    text-decoration: line-through;
+    color: rgb(252, 121, 121);
+}
+
 #chamada h2 {
     font-size: 3rem;
     color: #fff;
@@ -40,19 +52,27 @@
 #chamada h3 {
     font-size: 4rem;
     color: #fff;
-
+    background: linear-gradient(40deg, #f2ffe8 20%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 3rem;
+
 }
 
 #chamada h3 span {
-    background: linear-gradient(40deg, #ebfae0 40%, #1DCA1D 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
     font-size: 2rem;
 }
 
 #chamada h3 span.dois {
     font-size: 3rem;
+}
+
+#chamada p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #ffffffa3;
+    font-weight: 300;
 }
 
 #chamada a button {
@@ -74,7 +94,6 @@
     filter: brightness(1.2);
 }
 
-
 #chamada img.imagem {
     display: none;
 }
@@ -95,15 +114,15 @@
     }
 
     section#chamada h3 {
-        font-size: 8rem;
+        font-size: 9rem;
     }
 
     section#chamada h3 span {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     section#chamada h3 span.dois {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     section#chamada a button {

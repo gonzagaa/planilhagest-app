@@ -40,7 +40,7 @@
 }
 
 #home .content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #fff;
     line-height: 1;
     font-weight: 700;
@@ -57,8 +57,8 @@
 }
 
 #home .content p {
-    font-size: 1.8rem;
-    color: #fff;
+    font-size: 1.6rem;
+    color: #ffffffcc;
     font-weight: 300;
 
     margin-bottom: 2rem;
@@ -177,6 +177,7 @@
     display: none;
 }
 
+
 @media (min-width: 1080px) {  
     header#home {
         height: 100vh;
@@ -216,18 +217,14 @@
         display: none;
     }
 
-    header#home .content .text img.logo {
-        width: 25rem;
-    }
-
     header#home .content .text h1 {
-        font-size: 6rem;
+        font-size: 4.5rem;
         width: 70%;
         margin-bottom: 2rem;
     }
 
     header#home .content .text p {
-        font-size: 2.4rem;
+        font-size: 2rem;
         margin-bottom: 4rem;
         color: #ffffffab;
     }
@@ -239,9 +236,9 @@
     }
 
     header#home .wrapper .content .image img.principal {
-        width: 50%;
+        width: 40%;
         top: initial;
-        bottom: -45rem;
+        bottom: -35rem;
 
         animation: moveMockup infinite ease-in-out 5s;
     }
@@ -318,6 +315,16 @@
         cursor: pointer;
         filter: brightness(1.2);
         box-shadow: 0 0 30px #16d3165b;
+    }
+}
+
+@media (min-width: 1400px) {
+    header#home .wrapper .content .image img.principal {
+        width: 50%;
+        top: initial;
+        bottom: -45rem;
+
+        animation: moveMockup infinite ease-in-out 5s;
     }
 }
    

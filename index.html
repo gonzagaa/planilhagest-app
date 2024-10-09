@@ -6,14 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NRJ4GZBL');</script>
-    <!-- End Google Tag Manager -->
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planilha Gest</title>
@@ -21,6 +13,13 @@
     <link rel="shortcut icon" href="./assets/bola icone.png" type="image/x-icon">
 </head>
 <body>
+
+     <!-- Contador de promoção -->
+    <div class="promo-timer">
+        <p>Oferta válida por: <div id="countdown"></div></p>
+        
+        <a href="#chamada"><button>Adquirir agora</button></a>
+    </div>
 
     <header id="home">
         <div class="wrapper">
@@ -37,10 +36,10 @@
                     <img class="principal" src="./assets/mockup principal.webp" alt="">
                     <div class="cards">
                         <div class="box-card um">
-                            <a href="#"><p class="card">Quero garantir o acesso vitalício</p></a>
+                            <a href="#chamada"><p class="card">Quero garantir o acesso vitalício</p></a>
                         </div>
                         <div class="box-card dois">
-                            <a href="#"><p class="card">Quero garantir o acesso vitalício</p></a>
+                            <a href="#chamada"><p class="card">Quero garantir o acesso vitalício</p></a>
                         </div>
                     </div>
                 </div>
@@ -48,12 +47,6 @@
         </div>
 
         <img class="bg" src="./assets/bg planilhas gest.jpg" alt="">
-
-        <!-- Contador de promoção -->
-        <div class="promo-timer">
-            <p>Oferta válida por:</p>
-            <div id="countdown"></div>
-        </div>
     </header>
 
     <section id="porque">
@@ -83,23 +76,26 @@
                 </div>
 
                 <div data-aos="fade-up">
-                    <a href="#plano"><button>Quero garantir meu acesso VITALÍCIO ao app e dominar minhas apostas!</button></a>
+                    <a href="#chamada"><button>Quero garantir meu acesso VITALÍCIO ao app e dominar minhas apostas!</button></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Espaço para adicionar o vídeo -->
     <section id="video">
         <div class="wrapper">
-            <div class="content" data-aos="fade-up">
-                <h2>Veja como o app funciona:</h2>
-                <!-- Adicionar o vídeo aqui -->
-                <div class="video-container">
-                    <!-- <video controls> 
-                         <source src="link-do-seu-video.mp4" type="video/mp4"> 
-                    </video> -->
+            <div class="content">
+                <div class="text">
+                    <h2 data-aos="fade-up-right"><span>Entenda</span> como o app funciona:</h2>
+                    <p data-aos="fade-up-right">Aperte o play!</p>
+                    <div data-aos="fade-up-right" class="image">
+                        <img class="arrow" src="./assets/arrow.png" alt="">
+                    </div>
                 </div>
+                <video data-aos="fade-up-left" controls muted loop>
+                    <source src="./assets/video principal planilha.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
             </div>
         </div>
     </section>
@@ -199,13 +195,13 @@
                     <h2 data-aos="fade-up">Adquira <span>agora</span> por apenas:</h2>
 
                     <div data-aos="fade-up" class="price">
-                        <h3><span>De R$499</span> por <span>12x de R$19,90</span></h3>
+                        <h4>de <span>R$499,00</span> por:</h4>
+                        <h3>12<span>x</span> de <span>R$</span>19,79</h3>
                         <p>Por esse valor, você garante controle total das suas apostas e nunca mais perde dinheiro por falta de gestão.</p>
                     </div>
 
                     <div data-aos="fade-up" class="button">
-                        <a target="_blank" href="
-                        #"><button>ADQUIRIR AGORA</button></a>
+                        <a target="_blank" href="https://pay.kirvano.com/fc8b3300-7931-4dca-8af5-02d75a8cd79e"><button>ADQUIRIR AGORA</button></a>
                     </div>
                 </header>
             </div>
@@ -223,7 +219,7 @@
     
                 <div class="cards">
                     <div data-aos="fade-up" class="card">
-                        <a href=""><button>Chamar no WhatsApp</button></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5562999699977&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20Planilhas%20Gest!"><button>Chamar no WhatsApp</button></a>
                     </div>
                 </div>
             </div>
@@ -238,7 +234,6 @@
                 <p>CNPJ: 42.281.989/0001-07</p>
                 <p>Entrega em até 2 Horas via e-mail.</p>
                 <p>Reembolso ou devolução em até 7 dias.</p>
-                <a href="./politicadeprivacidade/index.html"><p>Política de Privacidade</p></a>
             </div>
         </div>
     </footer>
