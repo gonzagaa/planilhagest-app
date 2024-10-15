@@ -1,0 +1,23 @@
+#footer {
+    background: #fff;
+    padding-block: 4rem;
+}
+
+#footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 1.4rem;
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+#footer img {
+    width: 16rem;
+    margin-top: 3rem;
+}

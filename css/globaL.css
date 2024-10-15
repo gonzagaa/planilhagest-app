@@ -24,6 +24,10 @@
     --bg-color: #ededed;
 }
 
+#plano, #footer {
+  display: none; /* Esconde a section e o footer inicialmente */
+}
+
 html {
     scroll-behavior: smooth;
   }

@@ -1,0 +1,73 @@
+.promo-timer {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    z-index: 999;
+
+    background: var(--gradient);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.promo-timer p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.promo-timer div {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.promo-timer a button {
+    border: none;
+    background: var(--gradient2);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+    transition: all 300ms ease-in-out;
+}
+
+.promo-timer a button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media (min-width: 1080px) {
+    .promo-timer {
+        width: 35%;
+        transform: translate(0);
+        left: initial;
+        border-radius: 1rem;
+        top: 2rem;
+        right: 2rem;
+
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .promo-timer p {
+        font-size: 1.6rem;
+    }
+
+    .promo-timer div {
+        font-size: 1.8rem;
+    }
+
+    .promo-timer a {
+        margin-left: 1rem;
+    }
+
+    .promo-timer a button {
+        font-size: 1.6rem;
+    }
+}

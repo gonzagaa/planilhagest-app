@@ -27,8 +27,9 @@
 
 #plano header p {
     color: #1DCA1D;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 #plano .cards {
@@ -40,6 +41,7 @@
 }
 
 #plano .cards .card {
+    text-align: center;
     width: 100%;
     padding: 2rem;
     padding-block: 4rem;
@@ -51,7 +53,7 @@
              -20px -20px 60px #ffffff5f;
 }
 
-#plano .cards .card:nth-child(2) {
+#plano .cards .card:nth-child(3) {
     border: 2px solid #1DCA1D;
 }
 
@@ -104,7 +106,7 @@
     transition: all 200ms ease-in-out;
 }
 
-#plano .card:nth-child(2) a button {
+#plano .card:nth-child(3) a button {
     background: linear-gradient(to right, #177b17, #00f900);
     animation: gradient 3s ease infinite;
     background-size: 200% 200%;
@@ -117,11 +119,11 @@
     box-shadow: 0 0 30px #16d3165b;
 }
 
-#plano .card:nth-child(2) {
+#plano .card:nth-child(3) {
     position: relative;
 }
 
-#plano .card:nth-child(2) h6.mais {
+#plano .card:nth-child(3) h6.mais {
     color: #fff;
     background: var(--gradient);
     padding: 1rem 4rem;
@@ -133,9 +135,16 @@
     transform: translate(-50%, 0);
 }
 
-#plano img.seloPagamento {
-    width: 18rem;
+#plano .selos {
     margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+#plano .selos img {
+    width: 100%;
 }
 
 @media (min-width: 1080px) {
@@ -190,5 +199,21 @@
 
         -webkit-background-clip: initial;
         -webkit-text-fill-color: initial;
+    }
+
+    section#plano .selos {
+        justify-content: center;
+        align-items: center;
+        padding-inline: 20%;
+    }
+
+    section#plano .selos .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#plano .selos img {
+        width: 70%;
     }
 }

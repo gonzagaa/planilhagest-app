@@ -1,0 +1,194 @@
+#plano {
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient2);
+
+}
+
+#plano header {
+    margin-bottom: 4rem;
+}
+
+#plano header h2 {
+    font-size: 2.5rem;
+    color: var(--color-black);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#plano header h2 span {
+    font-weight: 600;
+    color: #fff;
+
+    background: linear-gradient(40deg, #016e03 10%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#plano header p {
+    color: #1DCA1D;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#plano .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#plano .cards .card {
+    width: 100%;
+    padding: 2rem;
+    padding-block: 4rem;
+    border-radius: 2rem;
+
+    border: 2px solid #ffffff49;
+    background: linear-gradient(145deg, #000912, #000b15);
+    box-shadow:  20px 20px 60px #7f9da7,
+             -20px -20px 60px #ffffff5f;
+}
+
+#plano .cards .card:nth-child(2) {
+    border: 2px solid #1DCA1D;
+}
+
+#plano .card h3 {
+    font-size: 2rem;
+    color: #fff;
+
+    margin-bottom: 3rem;
+}
+
+#plano .card h4 {
+    font-size: 1.6rem;
+    color: #ffffffbd;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+#plano .card h4 span {
+    text-decoration: line-through;
+    color: rgb(253, 186, 186);
+}
+
+#plano .card h5 {
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    background: linear-gradient(40deg, #ebfae0 10%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+}
+
+#plano .card h5 span {
+    font-size: 2rem;
+}
+
+#plano .card a button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(40deg, #ebfae0 10%, #c0fec0 100%);
+    animation: gradient 3s ease infinite;
+    background-size: 200% 200%;
+    color: #000116;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#plano .card:nth-child(2) a button {
+    background: linear-gradient(to right, #177b17, #00f900);
+    animation: gradient 3s ease infinite;
+    background-size: 200% 200%;
+    color: #fff;
+}
+
+#plano .card button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    box-shadow: 0 0 30px #16d3165b;
+}
+
+#plano .card:nth-child(2) {
+    position: relative;
+}
+
+#plano .card:nth-child(2) h6.mais {
+    color: #fff;
+    background: var(--gradient);
+    padding: 1rem 4rem;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    transform: translate(-50%, 0);
+}
+
+#plano img.seloPagamento {
+    width: 18rem;
+    margin-top: 5rem;
+}
+
+@media (min-width: 1080px) {
+    section#plano .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#plano header { 
+        margin-bottom: 7rem;
+    }
+
+    section#plano header h2 {
+        font-size: 5rem;
+    }
+
+    section#plano .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    section#plano .content .cards .card {
+        padding: 4rem;
+    }
+
+    section#plano .card h3 {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    section#plano .card h4 {
+        
+    }
+
+    section#plano .card h5 {
+        margin-bottom: 4rem;
+    }
+
+    section#plano .card h5 span {
+        color: #000111;
+        background: linear-gradient(40deg, #ebfae0 5%, #8fff8f 100%);
+
+        padding: 2rem;
+        padding-block: .5rem;
+        border-radius: 1rem;
+        z-index: 2;
+        position: absolute;
+        bottom: -2.5rem;
+        font-size: 1.4rem;
+
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+    }
+}

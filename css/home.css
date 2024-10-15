@@ -26,8 +26,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 }
 
 #home .content .text img {
@@ -36,15 +36,16 @@
 }
 
 #home .content .text {
-    margin-top: 7rem;
+    height: 100%;
 }
 
 #home .content h1 {
+    text-align: center;
     font-size: 2.5rem;
     color: #fff;
-    line-height: 1;
+    line-height: 1.1;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 #home .content h1 span {
@@ -140,19 +141,26 @@
 }
 
 #home .text a button {
-    color: #fff;
-    background: var(--gradient);
-    font-size: 1.6rem;
+    margin-top: 3rem;
+
+    width: 100%;
     padding: 1rem 3rem;
-    border-radius: 1rem;
+    font-size: 1.6rem;
     border: none;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #177b17, #00ff00);
+    animation: gradient 3s ease infinite;
+    background-size: 200% 200%;
+    color: #fff;
+    font-weight: 500;
 
     transition: all 200ms ease-in-out;
 }
 
 #home .text a button:hover {
     cursor: pointer;
-    filter: brightness(1.2);
+    filter: brightness(1.1);
+    box-shadow: 0 0 30px #16d3165b;
 }
 
 #home .content .image {
@@ -167,6 +175,7 @@
     top: 50%;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
     width: 100%;
+    height: 100%;
 }
 
 #home .image .cards {
@@ -180,23 +189,23 @@
 
 @media (min-width: 1080px) {  
     header#home {
-        height: 100vh;
+        min-height: 100vh;
         padding-block: initial;
-
-        border-radius: 0 0 12rem 12rem;
     }
 
-    header#home .text a {
-        display: none;
+    header#home .text {
+        padding-inline: 17%;
     }
 
     header#home img.bg {
         aspect-ratio: 16/9;
         filter: brightness(.2) blur(1px);
+        object-fit: cover;
+        height: 100%;
     }
  
     header#home .content {
-        height: 100vh;
+        min-height: 100vh;
         display: grid;
         align-items: center;
         justify-content: center;
@@ -206,7 +215,8 @@
     header#home .content .text {
         margin-top: initial;
         text-align: center;
-        margin-top: -4rem;
+
+        margin-top: 10rem;
 
         display: flex;
         flex-direction: column;
@@ -220,13 +230,13 @@
     header#home .content .text h1 {
         font-size: 3rem;
         width: 70%;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
-    header#home .content .text p {
-        font-size: 1.6rem;
-        margin-bottom: 4rem;
-        color: #ffffffab;
+    header#home .content .text a button {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        padding: 1.5rem 4rem;
     }
 
     header#home .content .image {
@@ -319,10 +329,14 @@
 }
 
 @media (min-width: 1700px) {
+    header#home .content .text {
+        padding-inline: 10%;
+    }
+
     header#home .content .text h1 {
         font-size: 4.5rem;
-        width: 75%;
-        margin-bottom: 2rem;
+        width: 100%;
+        margin-bottom: 4rem;
     }
 
     header#home .content .text p {
@@ -330,13 +344,9 @@
         margin-bottom: 4rem;
         color: #ffffffab;
     }
-    
-    header#home .wrapper .content .image img.principal {
-        width: 50%;
-        top: initial;
-        bottom: -45rem;
 
-        animation: moveMockup infinite ease-in-out 5s;
+    header#home .content .text a button {
+        margin-top: 4rem;
     }
 }
    

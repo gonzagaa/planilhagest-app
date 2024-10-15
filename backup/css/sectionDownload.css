@@ -1,0 +1,104 @@
+
+#download {
+    background: var(--bg-white);
+}
+
+#download h2 {
+    font-size: 3.5rem;
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+#download h2 span {
+    font-weight: 600;
+} 
+
+#download a button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #177b17, #04ff04);
+        animation: gradient 3s ease infinite;
+        background-size: 200% 200%;
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+#download a button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    box-shadow: 0 0 30px #16d3165b;
+}
+
+#download .cards {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#download .cards .card {
+    width: 70%;
+}
+
+#download .cards img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+
+    section#download {
+        position: relative;
+        padding-block: 3rem;
+    }
+
+    section#download .wrapper {
+        background: var(--gradient2);
+        padding: 5rem;
+        border-radius: 3rem;
+
+        position: absolute;
+        left: 50%;
+        top: -90%;
+        z-index: 2;
+        transform: translate(-50%);
+        box-shadow: 10px 10px 30px #0000001b;
+    }
+
+    section#download h2 {
+        font-size: 4rem;
+    }
+
+    section#download h2 span {
+        font-weight: 600;
+    }   
+
+    section#download .content {
+        align-items: center;
+    }
+
+    section#download .content .cards {
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#download .content .cards .card {
+        width: 40%;
+        padding: 1.1rem;
+    }
+
+    section#download .cards {
+        margin-top: 0;
+    }
+
+    section#download .cards a button {
+        font-size: 2.4rem;
+    }
+}
