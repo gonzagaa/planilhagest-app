@@ -24,7 +24,7 @@
     --bg-color: #ededed;
 }
 
-#plano, #footer {
+#plano, #footer,#buttonComprar {
   display: none; /* Esconde a section e o footer inicialmente */
 }
 
