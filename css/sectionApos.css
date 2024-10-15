@@ -5,7 +5,7 @@
 
 #apos h2 {
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--color-black);
     font-weight: 400;
 }
 

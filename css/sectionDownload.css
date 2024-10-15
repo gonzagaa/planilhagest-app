@@ -1,11 +1,11 @@
 
 #download {
-    background: var(--gradient2);
+    background: var(--bg-white);
 }
 
 #download h2 {
     font-size: 3.5rem;
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: 400;
 }
 
@@ -55,7 +55,6 @@
 @media (min-width: 1080px) {
 
     section#download {
-        background: #001427;
         position: relative;
         padding-block: 3rem;
     }

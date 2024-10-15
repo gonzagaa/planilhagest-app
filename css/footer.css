@@ -1,5 +1,5 @@
 #footer {
-    background: linear-gradient(140deg, #000f3c33, #00000081, #0000001d,#00093d2d);
+    background: #fff;
     padding-block: 4rem;
 }
 
@@ -13,6 +13,11 @@
 
 #footer p {
     font-size: 1.4rem;
-    color: #fff;
-    font-weight: 300;
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+#footer img {
+    width: 16rem;
+    margin-top: 3rem;
 }

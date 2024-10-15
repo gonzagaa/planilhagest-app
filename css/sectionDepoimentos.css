@@ -5,13 +5,18 @@
 
 #depoimentos header h2 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--color-black);
     margin-bottom: 4rem;
     font-weight: 400;
 }
 
 #depoimentos header h2 span {
     font-weight: 600;
+    color: #fff;
+
+    background: linear-gradient(40deg, #016e03 10%, #1DCA1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #depoimentos .cards {
@@ -29,14 +34,24 @@
 
 #depoimentos .cards .card img {
     width: 100%;
+    border: 3px solid #00000053;
 }
 
 #depoimentos .cards .card p {
     font-size: 1.6rem;
     line-height: 1.6;
-    color: #fff;
+    color: var(--color-black);
     margin-top: 1rem;
     font-weight: 500;
+}
+
+#depoimentos img.seloUsuarios {
+    width: 18rem;
+    margin-top: 5rem;
+}
+
+#depoimentos img.seloUsuarios.dois {
+    display: none;
 }
 
 @media (min-width: 1080px) {
@@ -46,19 +61,38 @@
         align-items: center;
         text-align: center;
 
-        padding-top: 10rem;
+        padding-top: 15rem;
     }
 
     section#depoimentos header h2 {
         font-size: 4rem;
         margin-bottom: 7rem;
-
-        display: none;
     }
 
     section#depoimentos .content .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 8rem;
+    }
+
+    section#depoimentos img.seloUsuarios {
+        position: absolute;
+        width: 12rem;
+        top: 15%;
+        left: 5%;
+    }
+
+    section#depoimentos img.seloUsuarios.dois {
+        display: inherit;
+        left: initial;
+        right: 5%;
+    }
+    
+}
+
+@media (min-width: 1500px) {
+    section#depoimentos img.seloUsuarios {
+        top: 45%;
+        width: 18rem;
     }
 }

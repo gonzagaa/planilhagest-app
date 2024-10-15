@@ -16,8 +16,8 @@
 #topico h2 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--secondary-color);
-    background: #e5ffdd;
+    color: #fff;
+    background: #000d20;
     width: max-content;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -38,7 +38,7 @@
 
 #topico p {
     font-size: 1.6rem;
-    color: #b4b5c2;
+    color: var(--color-black);
     font-weight: 300;
 
     position: relative;

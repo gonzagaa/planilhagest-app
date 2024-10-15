@@ -15,10 +15,11 @@
 
     --gradient: linear-gradient(to bottom, #28A428, #1DCA1D);
     --gradient-white: linear-gradient(to bottom, #ffffff, #e5ffe5);
-    --gradient2: linear-gradient(to bottom, #000a14, #001427);
+    /* --gradient2: linear-gradient(to bottom, #000a14, #001427); */
+    --gradient2: linear-gradient(to bottom, #e5edf8, #d6ebff);
 
     --color-black: #000a14;
-    --color-white: #e5ffe5;
+    --color-white: #000a14;
 
     --bg-color: #ededed;
 }
@@ -36,7 +37,7 @@ body {
 }
 
 body {
-  background: #000a14;
+  background: #f3f8fc;
 }
   
 ul {
