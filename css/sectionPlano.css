@@ -97,20 +97,13 @@
     font-size: 2rem;
     border: none;
     border-radius: 1rem;
-    background: linear-gradient(40deg, #ebfae0 10%, #c0fec0 100%);
-    animation: gradient 3s ease infinite;
-    background-size: 200% 200%;
-    color: #000116;
-    font-weight: 500;
-
-    transition: all 200ms ease-in-out;
-}
-
-#plano .card:nth-child(3) a button {
     background: linear-gradient(to right, #177b17, #00f900);
     animation: gradient 3s ease infinite;
     background-size: 200% 200%;
     color: #fff;
+    font-weight: 600;
+
+    transition: all 200ms ease-in-out;
 }
 
 #plano .card button:hover {
@@ -119,11 +112,11 @@
     box-shadow: 0 0 30px #16d3165b;
 }
 
-#plano .card:nth-child(3) {
+#plano .card {
     position: relative;
 }
 
-#plano .card:nth-child(3) h6.mais {
+#plano .card h6.mais {
     color: #fff;
     background: var(--gradient);
     padding: 1rem 4rem;
@@ -163,8 +156,7 @@
     }
 
     section#plano .content .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline: 15%;
         width: 100%;
     }
 
@@ -173,16 +165,17 @@
     }
 
     section#plano .card h3 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-bottom: 4rem;
     }
 
     section#plano .card h4 {
-        
+        font-size: 2.5rem;
     }
 
     section#plano .card h5 {
         margin-bottom: 4rem;
+        font-size: 10rem;
     }
 
     section#plano .card h5 span {
@@ -195,10 +188,14 @@
         z-index: 2;
         position: absolute;
         bottom: -2.5rem;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
 
         -webkit-background-clip: initial;
         -webkit-text-fill-color: initial;
+    }
+
+    section#plano .card a button {
+        font-size: 2.5rem;
     }
 
     section#plano .selos {
